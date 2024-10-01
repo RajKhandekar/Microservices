@@ -1,0 +1,14 @@
+eureka:
+  instance:
+    hostname: localhost
+
+#set this properties so we make sure that its not work as client because we want this as server   
+#so this will not gonna register as a client  
+
+  client: 
+    register-with-eureka: false
+    fetch-registry: false
+
+#by default eureka server port number is this
+server:
+  port: 8761    
